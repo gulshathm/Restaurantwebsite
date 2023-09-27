@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            line-height: 1.2;
+            font-weight: 250;
+        }
+
+        nav {
+            box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+            position: sticky;
+            top: 0;
+            margin-bottom: 32px;
+            background-color: white;
+            padding: 8px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .icon {
+            font-size: 32px;
+        }
+
+        .hero {
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero_content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .tag {
+            background-color: green;
+            padding: 5px 10px;
+            color: white;
+            align-self: flex-start;
+            margin-right: 60px;
+        }
+
+        .hero_content h1 {
+            font-size: 40px;
+            line-height: 1.2px;
+            font-weight: 400px;
+        }
+
+        .hero_image {
+            margin-left: 50px;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            transition: 0.2s ease-in-out;
+        }
+
+        button:hover {
+            opacity: 0.8;
+            transition: 0.2s ease-in-out;
+        }
+
+        .explore_btn {
+            background-color: orange;
+        }
+
+        .features {
+            display: flex;
+            margin-top: 90px;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            display: flex;
+            gap: 20px;
+            padding: 15px;
+            transition: 0.2 ease-in-out;
+        }
+
+        .divider {
+            border: 1px solid #ccc;
+            margin: 5px 0;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin: 50px 0;
+            align-items: center;
+        }
+
+        .menu .tag {
+            align-self: center;
+        }
+
+        .grid_img {
+            border-radius: 10px;
+            transition: 0.2s ease-in-out;
+            width: 100%;
+            height: 100%;
+        }
+
+        .grid_img_hover {
+            transform: scale(1.05);
+            transition: 0.2s ease-in-out;
+        }
+
+        .grid {
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+                "I1 I1 I2 I3"
+                "I1 I1 I2 I7"
+                "I4 I5 I6 I7";
+        }
+
+        .item1 {
+            grid-area: I1;
+        }
+
+        .item2 {
+            grid-area: I2;
+        }
+
+        .item3 {
+            grid-area: I3;
+        }
+
+        .item4 {
+            grid-area: I4;
+        }
+
+        .item5 {
+            grid-area: I5;
+        }
+
+        .item6 {
+            grid-area: I6;
+        }
+
+        .item7 {
+            grid-area: I7;
+        }
+
+        footer {
+            background-color: antiquewhite;
+        }
+
+        .link_list h3 {
+
+            color: gray;
+
+        }
+
+        .link_list ul li {
+            font-size: 15px;
+        }
+        .footer_container
+        {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .icon_container
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navigation container">
+            <div class="logo_container">
+                <img src="logo.png">
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <div class="hero_image">
+                <img src="hero_image.png">
+            </div>
+            <div class="hero_content">
+                <div class="tag">
+                    50% OFF ON ALL PRODUCT
+                </div>
+                <h1>Enjoy your delicious food</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Pariatur amet earum labore recusandae
+                    voluptas ipsam.</p>
+                <button class="explore_btn">Explore Now</button>
+            </div>
+        </div>
+        <section class="features">
+            <div class="feature">
+                <img src="discount.png">
+                <div class="fearture_content">
+                    <h3>Discount voucher</h3>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing
+                </div>
+                <div class="feature">
+                    <img src="fresh.png">
+                    <div class="fearture_content">
+                        <h3>Fresh Healthy Food</h3>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                    </div>
+                    <div class="feature">
+                        <img src="delivery.png">
+                        <div class="fearture_content">
+                            <h3>Fast Home Delivery</h3>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                        </div>
+                    </div>
+        </section>
+        <div class="divider"></div>
+        <div class="menu">
+            <div class="tag"> Our menu</div>
+            <h2>Explore our menu</h2>
+            <div class="grid">
+                <div class="item1">
+                    <img class="grid_image" src="grid_image1.png">
+                </div>
+                <div class="item2">
+                    <img class="grid_image" src="grid_image2.png">
+                </div>
+                <div class="item3">
+                    <img class="grid_image" src="grid_image3.png">
+                </div>
+                <div class="item4">
+                    <img class="grid_image" src="grid_image4.png">
+                </div>
+                <div class="item5">
+                    <img class="grid_image" src="grid_image5.png">
+                </div>
+                <div class="item6">
+                    <img class="grid_image" src="grid_image6.png">
+                </div>
+                <div class="item7">
+                    <img class="grid_image" src="grid_image7.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_container container">
+            <div class="footer_logo">
+                <img src="logo.png">
+            </div>
+            <div class="link_list">
+                <h3>Main Links</h3>
+                <ul>
+                    <li>Order Tracking</li>
+                    <li>New Order</li>
+                    <li>Contact Us</li>
+                    <li>News & Bolgs </li>
+                </ul>
+            </div>
+            <div class="flex">
+                <div class="link_list">
+                    <h3>Support</h3>
+                    <ul>
+                        <li>About us</li>
+                        <li>Privacy policy</li>
+                        <li>terms & Conditions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="news_letter">
+                <div class="link_list">
+                    <h3>Support</h3>
+                    <input type="email" placeholder="enter your email...">
+                    <h3>Follow us</h3>
+                    <div class="icon_container">
+                        <div class="icon">
+                            <img src="facebook.png">
+                        </div>
+                        <div class="icon">
+                            <img src="twitter.png">
+                        </div>
+                        <div class="icon">
+                            <img src="instagram.png">
+                        </div>
+                        <div class="icon">
+                            <img src="youtube.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
